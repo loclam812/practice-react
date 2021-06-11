@@ -1,0 +1,13 @@
+.component-counter {
+  margin: 20px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-count {
+      margin: 0 10px;
+    }
+  }
+}

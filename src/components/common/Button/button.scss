@@ -1,0 +1,22 @@
+.btn {
+  min-width: 50px;
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 16px / 14px;
+  border: 1px solid blue;
+  background-color: white;
+  border-radius: 6px;
+  color: black;
+  cursor: pointer;
+
+  &.\--blue {
+    border-color: white;
+    background-color: blue;
+    color: white;
+  }
+
+  &.\--disabled {
+    pointer-events: none;
+    opacity: .5;
+  }
+}

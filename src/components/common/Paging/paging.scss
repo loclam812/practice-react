@@ -1,0 +1,43 @@
+.component-paging {
+  $font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-left: 0;
+  font-size: $font-size;
+  line-height: 15px / $font-size;
+  color: grey;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 4px;
+    background-color: white;
+    color: #424242;
+    font-weight: bold;
+    user-select: none;
+    cursor: pointer;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.\--active {
+      color: #0056BF;
+      pointer-events: none;
+      background-color: #E8EEF3;
+    }
+
+    &.\--disabled {
+      color: #d8d8d8;
+      pointer-events: none;
+    }
+  }
+}

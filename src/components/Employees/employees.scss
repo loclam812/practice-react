@@ -1,0 +1,23 @@
+.component-employees {
+  position: relative;
+  min-height: 300px;
+  margin: 20px 15px;
+
+  &__content {
+    &-add {
+      $font-size: 14px;
+
+      font-size: $font-size;
+      line-height: 18px / $font-size;
+      color: grey;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+
+      &-text {
+        display: inline-block;
+        margin: 10px 0;
+        cursor: pointer;
+      }
+    }
+  }
+}
